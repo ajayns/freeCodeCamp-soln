@@ -1,6 +1,6 @@
 function titleCase(str) {
-  str = str.toLowerCase().split(' ').map(function(word) {
-    return (word.charAt(0).toUpperCase() + word.slice(1));
+  str = str.toLowerCase().split(' ').map(function(word) { // Traverse through each word
+    return (word.charAt(0).toUpperCase() + word.slice(1)); // Convert first character to uppercase
   });
   str = str.join(' ');
   return str;
